@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Base URL for API requests, dynamically set based on environment
 const API = axios.create({
-  baseURL: 'http://localhost:7001/api',  // Use environment variable for production URL
+  baseURL: 'https://car-management-tmlc.onrender.com/api',  // Use environment variable for production URL
   withCredentials: true,  // if you're using cookies/sessions
 });
 
