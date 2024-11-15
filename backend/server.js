@@ -6,7 +6,7 @@ const app = express();
 
 connectDB();
 const corsOptions = {
-  origin: 'https://car-management-nu.vercel.app/',  // Allow only the frontend URL
+  origin: 'https://car-management-nu.vercel.app',  // Allow only the frontend URL
   methods: 'GET,POST,PUT,DELETE',  // Allowed HTTP methods
   allowedHeaders: 'Content-Type,Authorization',  // Allowed headers 
   credentials: true,
