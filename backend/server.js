@@ -6,8 +6,9 @@ const app = express();
 
 connectDB();
 const corsOptions = {
-    origin: 'https://car-management-priyanshyvs-projects.vercel.app/',  // Allow only your frontend URL
-    credentials: true,               // Allow credentials (cookies, etc.)
+  origin: 'https://car-management-priyanshyvs-projects.vercel.app',  // Allow only the frontend URL
+  methods: 'GET,POST,PUT,DELETE',  // Allowed HTTP methods
+  allowedHeaders: 'Content-Type,Authorization',  // Allowed headers 
   };
   app.use(cors(corsOptions));
 app.use(express.json());
