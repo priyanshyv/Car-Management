@@ -6,7 +6,7 @@ const app = express();
 
 connectDB();
 const corsOptions = {
-    origin: 'http://localhost:3000',  // Allow only your frontend URL
+    origin: 'http://localhost:5173',  // Allow only your frontend URL
     credentials: true,               // Allow credentials (cookies, etc.)
   };
   app.use(cors(corsOptions));

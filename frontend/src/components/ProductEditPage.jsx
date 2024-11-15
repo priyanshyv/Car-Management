@@ -8,8 +8,8 @@ const ProductEditPage = () => {
   const [carData, setCarData] = useState({
     title: '',
     description: '',
-    tags: '',  // Initialize as a string
-    images: '',  // Initialize as a string
+    tags: '',  
+    images: '', 
   });
   const navigate = useNavigate();
 

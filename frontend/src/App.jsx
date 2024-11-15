@@ -16,14 +16,13 @@ const App = () => {
         </header>
         <main>
           <Routes>
-            {/* Routes for each page */}
             <Route path="/" element={<ProductListPage />} />
             <Route path="/cars/create" element={<ProductCreationPage />} />
             <Route path="/cars/:id" element={<ProductDetailPage />} />
             <Route path="/cars/edit/:id" element={<ProductEditPage />} />
           </Routes>
         </main>
-        <ToastContainer /> {/* Toast notifications will show up here */}
+        <ToastContainer />
       </div>
     </Router>
   );
